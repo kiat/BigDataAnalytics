@@ -34,20 +34,20 @@ if __name__ == "__main__":
 
 
     
+
+
+
+
+# Question 1
+# Implement a pyspark code that can find out the top-10 sold products. 
+
     lines = lineitems.select("ORDERKEY", "PARTKEY")\
     .withColumn("COUNT", lit(1))
     .groupBy("PARTKEY").agg(func.sum("COUNT"))\
 
     result_1 = lines.orderBy("sum(COUNT)", ascending=False).limit(10).show()
-
-
-
     result_1.saveAsTextFile(sys.arg[2])
 
-
-
-# Question 2
-# Implement a pyspark code that can find out the top-10 sold products. 
 
 
 # Something like this with RDD... 
@@ -58,7 +58,7 @@ if __name__ == "__main__":
 
 
 # ---------------------------------------------------------------------------
-# Question 3
+# Question 2
 
 # Find the top-10 customers based on the number of products ordered.
 
@@ -68,7 +68,7 @@ if __name__ == "__main__":
 
 # ---------------------------------------------------------------------------
 
-# Question 4
+# Question 3
 # Find the top-10 customers that have ordered products from the same supplier. 
 
 
@@ -76,7 +76,7 @@ if __name__ == "__main__":
 
 
 # ---------------------------------------------------------------------------
-# Question 5 and 6 
+# Question 4 and 5
 # Find the customers who have not ordered
 # products from their own country and have ordered only foreign products. 
 
@@ -87,7 +87,7 @@ if __name__ == "__main__":
 
 
 # ---------------------------------------------------------------------------
-# Question 7
+# Question 6
 # Find the top-10 similar customers based of their orders. (Jaccard Similarity)
 # First of all we collect all of the products that each customer ordered. 
 
@@ -95,12 +95,8 @@ if __name__ == "__main__":
 
 
 # ---------------------------------------------------------------------------
-# Question 8
+# Question 7
 # Implement a pyspark code that can find the top-10 products pairs that are ordered mostly together. 
-
-
-
-
 
 
 
