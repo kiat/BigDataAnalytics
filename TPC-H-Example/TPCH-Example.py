@@ -27,9 +27,9 @@ if __name__ == "__main__":
     sc = SparkContext(conf=conf)
 
 
-    # customers = sqlContext.read.format('csv').options(header='true', inferSchema='true',  sep ="|").load("file:////Users/kiat/git/MET-CS777/data/tpch_tables_scale_0.1/customer.tbl")
+    # lineitems = sqlContext.read.format('csv').options(header='true', inferSchema='true',  sep ="|").load("file:////Users/kiat/git/MET-CS777/data/tpch_tables_scale_0.1/lineitem.tbl")
 
-    orders = sqlContext.read.format('csv').options(header='true', inferSchema='true',  sep ="|").load(sys.arg[1])
+    lineitems = sqlContext.read.format('csv').options(header='true', inferSchema='true',  sep ="|").load(sys.arg[1])
 
 
 
