@@ -29,6 +29,15 @@ def metroplis(start, target, proposal, niter, nburn=0):
         post.append(current)
     return post[nburn:]
 
+
+
+# Generic Metropolis scheme
+
+data = islands[1:-1]
+data = data/data.sum()
+sns.barplot(x=np.arange(len(data)), y=data)
+pass
+
 # Apply to island hooper - MH
     
 target = lambda x: islands[x]
