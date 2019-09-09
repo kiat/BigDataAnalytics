@@ -69,12 +69,12 @@ HOME folder is the main user folder, for example on my Mac it is /Users/kiat/ (n
 
 ![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-5.png "AWS")
 
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)
 <span style="color:red">**IMPORTANT NOTE:**</span>
- Never share your prive key .pem file with anyone (be carefull to not push it to github)
+Never share your prive key .pem file with anyone (be carefull to not push it to github)
 
 
-
-<span style="color:blue">**NOTE:**</span>
+![#1589F0](https://placehold.it/15/1589F0/000000?text=+) <span style="color:blue">**NOTE:**</span>
 You can click on the AWS log on top left to go back to main AWS console page. 
 
 #  AWS EMR 
@@ -89,6 +89,7 @@ No go back to AWS EMR.
 1. Select Spark here to have Apache Spark installed on your cluster machines. 
 2. Select your keypair from the EC2 key pair 
 
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+)
 <span style="color:red">**IMPORTANT NOTE:**
 It is important that you select your Pair Key. 
 Otherwise you can not login to your master machine using SSH connection. 
