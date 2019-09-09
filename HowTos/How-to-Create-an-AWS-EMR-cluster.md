@@ -86,6 +86,14 @@ No go back to AWS EMR.
 
 ![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-7.png "AWS")
 
+1. Select Spark here to have Apache Spark installed on your cluster machines. 
+2. Select your keypair from the EC2 key pair 
+
+<span style="color:red">**IMPORTANT NOTE:**
+It is important that you select your Pair Key. 
+Otherwise you can not login to your master machine using SSH connection. 
+</span>
+
 ![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-8.png "AWS")
 
 ![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-9.png "AWS")
