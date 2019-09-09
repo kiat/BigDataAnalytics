@@ -101,14 +101,42 @@ It is important that you select your Pair Key.
 Otherwise you can not login to your master machine using SSH connection. 
 </span>
 
+You can also select the number of machines that you want to have or the type of machines. 
+
+AWS makes here a suggestion of 1 master node and 2 worker node with EC instance type of **m5.xlarge** 
+
+Each machine of type **m5.xlarge** (M5 General Purpose Extra Large)	
+
+has 16.0 GiB	and 4 vCPUs	, 10 Gigabit	
+
+Costs in N.Virigina data center approximaty $0.192 per Hour
+
+
+
+You can check the pricing here 
+https://aws.amazon.com/ec2/pricing/on-demand/ 
+
+So this cluster will cust 3 * 0.192 = 0.576 
+
+And because we are using EMR to make the spark installation more easier, amazon will charge more. 
+It will be approximatly an addional 20% 
+
+Approximate cost per hour =  0.576 × 1.2  = 0.6912 USD 
+
+AWS charges hourly, so it does not matter if you start and stop the cluster immadiatly you will pay the cost for 
+a complete hour of computation. Also when you run a cluster for 65 min, you will be charged for 2 hours and not for 1 hour and 5 min. 
+
+
 ![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-8.png "AWS")
 
 
 It can take up to some minutes until your cluster of machines are provisioned, running and ready for use. 
 
+The provisioning time depends on number of machines, type of machines and how busy is AWS in that time/date. 
+
 ![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-9.png "AWS")
 
-
+If you see that your machined have received their IP addresses, your cluster is ready for use. 
 
 ![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-10.png "AWS")
 
