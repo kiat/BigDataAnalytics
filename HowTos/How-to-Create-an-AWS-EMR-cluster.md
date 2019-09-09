@@ -231,18 +231,34 @@ Input file locations are given to you on your assignments.
 
 ![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-21.png "AWS")
 
+If your processing step is failing under 20 seconds, it is probably faild and you have some where in your program or your setup an error. 
+
+You can read the log files and check again. 
+
 ![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-22.png "AWS")
 
 
 # Enabling SSH Connection if you want to see GUIs 
 
+If you want to see the Spark GUI spark History UI then you need to use an SSH connection and set up a SOCKS proxy. 
+
+Read the documentations on EMR 
+
+You need to install FoxyProxy plugin for chrome or firefox to setup the proxy connection. 
+
 ![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-23.png "AWS")
+
+
 
 # Running Steps 
 
 ![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-24.png "AWS")
 
 ![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-25.png "AWS")
+
+After your Processing step is completed you can go to output folder on S3 and check the results 
+
+You can also see the log files for informations and potential errors. 
 
 ![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-26.png "AWS")
 
@@ -252,9 +268,18 @@ Input file locations are given to you on your assignments.
 
 ![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-28.png "AWS")
 
+
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+) 
 # Do not forget to terminate the EMR Cluster
 
 ![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-29.png "AWS")
+
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+) 
+Do not forget to terminate your EMR. 
+
+Reember that for the 3 machines in your cluster you are paying about .7 cents per hours. It seems to be cheap but it sums up fast when you forget it for some days. 
+
+
 
 
 
