@@ -215,8 +215,19 @@ You will get an error if the output folder exist on S3. If you have created it b
 
 ![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-20.png "AWS")
 
-```s3://kiateymourian/sparkfiles/WordCount.py  s3://metcs777/WikipediaPagesOneDocPerLine1000LinesSmall.txt   s3://kiateymourian/output```
 
+My python script location is : 
+```s3://kiateymourian/sparkfiles/WordCount.py```
+
+In your prgoram arguments you should add your input and output filders, like my input file and output folder:  
+```s3://metcs777/WikipediaPagesOneDocPerLine1000LinesSmall.txt  s3://kiateymourian/output```
+
+Input file locations are given to you on your assignments. 
+
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+) It is important to have at least one space between input and output locations.
+
+
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+) Your script should read the input and output files from the command line arguments. 
 
 ![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-21.png "AWS")
 
