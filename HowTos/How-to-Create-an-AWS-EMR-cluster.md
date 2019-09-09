@@ -148,32 +148,75 @@ If you see that your machined have received their IP addresses, your cluster is 
 
 ![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-10.png "AWS")
 
+Click on **Steps** tab and if you see the instakktion task as complete then your cluster is ready to use. 
+
 ![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-11.png "AWS")
 
+AWS EMR consider all of the installation and computations as processing steps. They developed some scripts to install spark on EC2 machines. EMR is a a very easy to use way to start machines, install spark and hadoop and run computations on it. 
+
+You can start adding your computation task as a next processing task. 
+
+Click on **Add step** button 
+
 ![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-12.png "AWS")
+
+Change the menu to **Spark Application** because we will run our pyspark script. 
 
 ![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-13.png "AWS")
 
 
+You will to have your python script stored in a S3 bucket and accessable publicly. 
+
+AWS S3 (Amazon Simple Storage Service) is a service offered by AWS that provides object storage to store very large files. 
+
+We need to go to S3 and store our Python Script there. 
+
 # Amazon Storage S3 
 
+Go to the main AWS Console and go to AWS S3 
+
 ![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-14.png "AWS")
+
+First create a bucket in S3. 
+
+**A S3 Bucket** is like a folder on your laptop. However, S3 buckets are unique names because all of the files in the folder will be accessable via S3 intervaces. It should be 
 
 ![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-15.png "AWS")
 
 ![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-16.png "AWS")
 
+We create bucket and allow public access to the folder. We just want to store here tiny script files and allow AWS EMR to access these files. 
+
 ![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-18.png "AWS")
+
+I created here a bucket with my name. You need to search for a unique bucket name and create it. 
+
 
 ![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-19.png "AWS")
 
 
-# Back to Amazon EMR to run a Job on it. 
+# Go back to EMR to set up a data processing step 
+
+Now lets go back to EMR and set up our processing step. 
 
 In EMR it is called a **A step** which is a processing step. 
 
+We need to set up 3 things
+
+1. What is our python script that we want to run (an address on S3)
+2. What is our input data file or folder on S3 
+3. What is our result output folder on S3 
+
+So we need to have 3 different address. 
+
+![#f03c15](https://placehold.it/15/f03c15/000000?text=+) Output folder on S3 should not exist. 
+This folder will be created when your result output is generated. 
+You will get an error if the output folder exist on S3. If you have created it before you can remove it before or change the folder name. 
 
 ![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-20.png "AWS")
+
+```s3://kiateymourian/sparkfiles/WordCount.py  s3://metcs777/WikipediaPagesOneDocPerLine1000LinesSmall.txt   s3://kiateymourian/output```
+
 
 ![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-21.png "AWS")
 
