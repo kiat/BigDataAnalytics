@@ -4,13 +4,19 @@ In this tutotrial you will learn how to create a AWS EMR (ElasticMapReduce) clus
 
 You will learn: 
 
-1. Create an AWS EMR cluster
+1. Create a Key Pair on EC2 
 
-2. Upload a PySpark program onto the cluster
+2. Create an AWS EMR cluster
 
-3. Run a Spark job
+3. Upload a PySpark program to S3 
 
-4. Check out the results on S3 Storage. 
+4. Run a Spark job (Computation Steps)
+
+5. Check out the results on S3 Storage. 
+
+6. Login to Master Node and run spark on Command Line
+
+7. Run pyspark code on Apache Zeppelin 
 
 
 
@@ -97,7 +103,12 @@ Otherwise you can not login to your master machine using SSH connection.
 
 ![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-8.png "AWS")
 
+
+It can take up to some minutes until your cluster of machines are provisioned, running and ready for use. 
+
 ![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-9.png "AWS")
+
+
 
 ![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-10.png "AWS")
 
