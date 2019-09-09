@@ -31,9 +31,6 @@ This is the main AWS console page.
 ## Start Up a EMR Cluster
 
 
-
-![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-2.png "AWS")
-
 ![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-2.png "AWS")
 
 
@@ -41,10 +38,11 @@ This is the main AWS console page.
 
 Amaozn AWS EC2 (Elastic Computing) 
 
+The first step is to go to EC2 and create a key pair. 
 
 ![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-3.png "AWS")
 
-
+You can skip the following step if you have already generated a key pair. 
 
 # How to Create your Key Pair on AWS EC2 
 
@@ -58,15 +56,31 @@ To connect to the cluster you will create later, you need a Key Pair as an ident
 6. This should create a ".pem" file that you can download. 
 You will subsequently use this .pem file to connect securely to a machine over the internet. 
 
-**IMPORTANT NOTE:** Never share your prive key .pem file with anyone (be carefull to not push it to github)
+
 
 
 ![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-4.png "AWS")
 
+Download and store the key file **.pem** file. 
+
+It would make your commands simple if you store this key file in your HOME folder. 
+HOME folder is the main user folder, for example on my Mac it is /Users/kiat/ (note that my account name on my Mac is kiat)
+
+
 ![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-5.png "AWS")
 
+<span style="color:red">**IMPORTANT NOTE:**</span>
+ Never share your prive key .pem file with anyone (be carefull to not push it to github)
+
+
+
+<span style="color:blue">**NOTE:**</span>
+You can click on the AWS log on top left to go back to main AWS console page. 
 
 #  AWS EMR 
+
+No go back to AWS EMR. 
+
 
 ![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-6.png "AWS")
 
