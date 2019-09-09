@@ -24,3 +24,11 @@ You will subsequently use this .pem file to connect securely to a machine over t
 
 
 
+
+
+# 
+
+![AWS Educate First Page](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-1.png "AWS Educate First Page")
+
+
+
