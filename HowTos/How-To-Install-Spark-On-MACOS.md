@@ -79,3 +79,19 @@ To activate the current variables you can restart your mac or type
 
 ```source .bash_profile```
 
+
+
+# Run 
+
+You can now run the following commands 
+
+
+
+pyspark 
+
+
+or 
+
+spark-submit 
+
+
