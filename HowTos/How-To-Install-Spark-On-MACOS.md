@@ -21,8 +21,7 @@ JAVA_HOME variable to the main folder where you have installed your java
 # Download Apache Spark 
 
 
-```/Users/kiat/spark-2.3.0-bin-hadoop2.7```
-
+Go to the Spark website and download spark binary package 
 
 http://spark.apache.org/downloads.html
 
@@ -31,8 +30,7 @@ Direct link is for example following
 
 http://apache.osuosl.org/spark/spark-2.4.4/spark-2.4.4-bin-hadoop2.7.tgz
 
-
-Run on the command line the following command to download: 
+You can run the following command to download: 
 
 ```wget http://apache.osuosl.org/spark/spark-2.4.4/spark-2.4.4-bin-hadoop2.7.tgz```
 
