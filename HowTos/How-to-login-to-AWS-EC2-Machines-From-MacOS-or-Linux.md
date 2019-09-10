@@ -6,10 +6,12 @@ located in your working directory; replace this with the actual name and locatio
 assuming that you called your key pair something else. 
 Type:
 
-chmod 500 MyFirstKeyPair.pem
+```chmod 500 MyFirstKeyPair.pem```
 
 Now, you can connect to your master machine (replace “54.172.82.0” with the IP address of
 your own master machine):
+
 ssh -i "MyFirstKeyPair.pem" ubuntu@54.172.82.0
+
 This will give you a Linux prompt; you are connected to your master node.
 Important: Never share your .pem fle. 
