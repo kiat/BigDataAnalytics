@@ -1,5 +1,5 @@
 
-# Step-1 
+# Step-1 - Setup Java JDK
 
 Install java JDK on your machine 
 
@@ -18,7 +18,7 @@ JAVA_HOME variable to the main folder where you have installed your java
 ```export JAVA_HOME=`/usr/libexec/java_home -v 1.8` ``
 
 
-# Download Apache Spark 
+# Step-2 - Download Apache Spark 
 
 
 Go to the Spark website and download spark binary package 
@@ -43,7 +43,7 @@ I have my spark on the following folder
 
 ```/Users/kiat/spark-2.3.0-bin-hadoop2.7```
 
-# Setup Enviroment Variables. 
+# Step-3 -  Setup Enviroment Variables. 
 
 Edit the bash_profile file and set some Environment variables 
 
@@ -65,6 +65,11 @@ Add Spark bin and sbin folder to the PATH
 
 
 
+To activate the current variables you can restart your mac or type 
+
+```source .bash_profile```
+
+
 If you want to use the jupyter notebook on your mac set the following two variables as well. 
 
 **Note:** Note that you can only use pyspark ipython shell or jupyter notebooks, one of them only 
@@ -75,13 +80,10 @@ You can comment or uncomment the following variables to use one of them
 ```export PYSPARK_DRIVER_PYTHON_OPTS="notebook"```
 
 
-To activate the current variables you can restart your mac or type 
-
+to activate 
 ```source .bash_profile```
 
-
-
-# Run 
+# Step-4 - Run Spark 
 
 You can now run the following commands 
 
@@ -94,4 +96,5 @@ or
 
 ```spark-submit```
 
+The above commands will run spark on Stand alone mode and in a single process
 
