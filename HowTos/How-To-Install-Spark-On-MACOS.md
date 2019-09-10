@@ -54,6 +54,7 @@ Edit the bash_profile file and set some Environment variables
 
 
 ```export SPARK_HOME=/Users/kiat/spark-2.3.0-bin-hadoop2.7```
+
 ```export PYTHONPATH=$SPARK_HOME/python:$PYTHONPATH```
 
 Set it to the path where you have your python3 
@@ -72,6 +73,7 @@ If you want to use the jupyter notebook on your mac set the following two variab
 You can comment or uncomment the following variables to use one of them  
 
 ```export PYSPARK_DRIVER_PYTHON="jupyter"```
+
 ```export PYSPARK_DRIVER_PYTHON_OPTS="notebook"```
 
 
@@ -87,11 +89,11 @@ You can now run the following commands
 
 
 
-pyspark 
+```pyspark``` 
 
 
 or 
 
-spark-submit 
+```spark-submit```
 
 
