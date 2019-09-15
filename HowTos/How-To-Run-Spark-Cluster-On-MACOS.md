@@ -45,7 +45,7 @@ To Stop the process you can use
 
 
 
-```spark-submiut  --master    spark://localhost:7077  YOUR-PYHON.py INPU OUTPUT```
+```spark-submit  --master    spark://localhost:7077  YOUR-PYTHON.py INPUT OUTPUT```
 
 
 
