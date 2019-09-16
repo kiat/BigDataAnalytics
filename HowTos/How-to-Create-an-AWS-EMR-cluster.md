@@ -90,7 +90,7 @@ You can click on the AWS log on top left to go back to main AWS console page.
 
 #  AWS EMR 
 
-No go back to AWS EMR. 
+Now go back to AWS EMR. 
 
 
 ![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-6.png "AWS")
@@ -157,6 +157,10 @@ AWS EMR consider all of the installation and computations as processing steps. T
 You can start adding your computation task as a next processing task. 
 
 Click on **Add step** button 
+
+The steps to run Spark Jobs on EMR is documented well here 
+
+[https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-spark-submit-step.html](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-spark-submit-step.html)
 
 ![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-12.png "AWS")
 
