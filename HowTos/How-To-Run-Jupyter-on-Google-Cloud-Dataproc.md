@@ -49,6 +49,10 @@ After your cluster is provisioned and running, click on the cluster and go to We
 
 You can find all of the Web Interfaces here, Jupyter and Spark History
 
+**You can click on the given Links and Access them** 
+No further setups is needed. 
+
+
 ![Create a Cluster and Enable Access to Web Interfaces ](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/gc-webinterface-4.png)
 
 
