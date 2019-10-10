@@ -38,7 +38,7 @@ The Jupyter Web UI is available on port 8123 on the cluster's first master node.
 
 
 # Access the Web interfaces (Jupyter and Spark History)
-After your cluster is provisioned and running, click on the cluster and 
+After your cluster is provisioned and running, click on the cluster and go to Web Interfaces 
 
 
 
@@ -46,6 +46,8 @@ After your cluster is provisioned and running, click on the cluster and
 ![Create a Cluster and Enable Access to Web Interfaces ](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/gc-webinterface-3.png)
 
 
+
+You can find all of the Web Interfaces here, Jupyter and Spark History
 
 ![Create a Cluster and Enable Access to Web Interfaces ](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/gc-webinterface-4.png)
 
