@@ -1,11 +1,11 @@
-# PySpark Installation - Windows 10
-
-We will need the following to setup the programming environment for this course on a Windows machine:
+# CS777 - Setup Programming Environment - Windows 10
+***
+We will need the following software components to setup the programming environment for this course on a Windows machine:
 
 1. Java
 2. Anaconda Python Distribution
 3. winutils
-4. PySpark
+4. Spark
 5. PyCharm (IDE for Python Development)
 
 Following are step-by-step instructions for putting together all the components:
@@ -53,19 +53,19 @@ Now it's time to verify our conda and python installations. Fire up a command pr
 conda --version
 python --version
 ```
-You should get the versions(Note: the actual versions may be different):
+You should get the versions as output (Note: the actual versions may be different):
 ```
 conda 4.8.0
 Python 3.7.3
 ```
 
-## Step 3: PySpark Installation
+## Step 3: Spark Installation
 
 Download the last stable version of Apache Spark from the following url:
 http://spark.apache.org/downloads.html
 
 You can use the following options:
-* Choose a Spark release: 2.4.4 (Aug 30 2019)
+* Choose a Spark release: 2.4.4 (Aug 30 2019)<br/>
 * Choose a package type: Pre-built for Hadoop 2.7
 
 Create a folder 'spark' in 'C:\ProgramData' and move 'spark-2.4.4-bin-hadoop2.7.tgz' from your downloads folder to this directory.
@@ -128,5 +128,5 @@ https://www.jetbrains.com/pycharm/download/#section=windows
 ## Step 5: Configure Jupyter Notebook for PySpark
 
 Setting up jupyter notebook for pyspark is quite simple. Just add the following system environment variables:
-```PYSPARK_DRIVER_PYTHON``` set to ```jupyter```
+```PYSPARK_DRIVER_PYTHON``` set to ```jupyter```<br/>
 ```PYSPARK_DRIVER_PYTHON_OPTS``` set to ```notebook```
