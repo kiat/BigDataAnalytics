@@ -184,3 +184,7 @@ Once you have installed PyCharm, create a new project and add the python script 
    ```python
    ValueError: Cannot run multiple SparkContexts at once; existing SparkContext(app=PySparkShell, master=local[*]) created by <module> at C:\ProgramData\Anaconda3\lib\site-packages\IPython\utils\py3compat.py:188
    ```
+  Solution: Close all other spark sessions and try again.
+  
+2. Do I need ***findspark** ?
+   No, this library is not required anymore with pysaprk bindings for Anaconda, we installed in Step3
