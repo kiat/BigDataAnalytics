@@ -1,4 +1,4 @@
-* Installing Java
+# Installing Java
 --------------------
 Goal is to install Java on Windows Machine and use it on windows command prompt.
 
@@ -8,7 +8,7 @@ Goal is to install Java on Windows Machine and use it on windows command prompt.
 * JDK includes JRE as well.
 
 
-** Step-1:
+## Step-1:
 -----------
 
 * Download the Java JDK from Oracle Website
@@ -20,7 +20,7 @@ However, we recommend using Java JDK 8.
 For Java 8 you can download the file from here
 http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 
-** Step-2:
+## Step-2:
 -----------
 
 * Double click the exe file and follow the instructions.
@@ -29,7 +29,7 @@ http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.h
 On my PC this PATH is "C:\Program Files\Java\jdk1.8.0_171"
 (On your PC this can be different)
 
-Step-3
+## Step-3
 ----------
 * You need to change the PATH variable to make the java and javac commands
 available to you on the windows terminal.
