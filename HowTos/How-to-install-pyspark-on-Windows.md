@@ -207,7 +207,7 @@ Once you have installed PyCharm, create a new project and add the python script 
    ```python
    # import for spark session handle
    from pyspark.sql import SparkSession
-   spark = SparkSession.builder.appName('cs777-FinalExam').getOrCreate()
+   spark = SparkSession.builder.appName('cs777-Application1').getOrCreate()
    ```
   
 2. Do I need ***findspark** ?
