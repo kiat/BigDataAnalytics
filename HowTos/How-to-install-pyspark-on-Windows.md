@@ -144,13 +144,31 @@ So, our installation is good, now let's create PySpark script in python and see 
   sc.stop()
   print("end")
   ```
-  * Next, run the python script using the following commands in the **Anaconda Prompt**:
+  * Next, run the python script using the following commands (*using appropriate path on your computer*) in the **Anaconda Prompt**:
   ```
   cd C:\Users\Subrat\Documents\CS777
   spark-submit TestPySpark.py
   ```
   If there are no problems, you should see the following output:
   ![windows_install_02](https://github.com/kiat/MET-CS777/blob/master/HowTos/sceenshots/windows_install_02.PNG)
+  As you can see, spark generated tons of messages which end up obfuscating the output that we are really interested in. To fix this, let us update the logging properties for spark. Here's how:
+   * Navigate to the conf folder in your spark installation directory. For example:
+     ```
+     C:\ProgramData\spark\spark-2.4.4-bin-hadoop2.7\conf
+     ```
+   * If you do not have a file ```log4j.properties``` here, then copy the file ```log4j.properties.template``` and rename it to ```log4j.properties```
+   * Open the ```log4j.properties``` and change the following two lines from:
+        ```
+        # Set everything to be logged to the console
+        log4j.rootCategory=INFO, console
+        ```
+       to 
+        ```
+        # Set only warnings to be logged to the console
+        log4j.rootCategory=WARN, console
+        ```
+   * Save the ```log4j.properties``` and re-run ```TestPySpark.py``` Now you should see only relevant output:
+   ![windows_install_08](https://github.com/kiat/MET-CS777/blob/master/HowTos/sceenshots/windows_install_08.PNG)
 
 ## Step 4: Configure Jupyter Notebook for PySpark
 
@@ -184,7 +202,12 @@ Once you have installed PyCharm, create a new project and add the python script 
    ```python
    ValueError: Cannot run multiple SparkContexts at once; existing SparkContext(app=PySparkShell, master=local[*]) created by <module> at C:\ProgramData\Anaconda3\lib\site-packages\IPython\utils\py3compat.py:188
    ```
-  Solution: Close all other spark sessions and try again.
+   Solution: Close all other spark sessions and try again.
   
 2. Do I need ***findspark** ?
    No, this library is not required anymore with pysaprk bindings for Anaconda, we installed in Step3
+   
+3. When I run ```spark-submit TestPySpark.py``` why do I get error like this?
+   ![windows_install_err_01](https://github.com/kiat/MET-CS777/blob/master/HowTos/sceenshots/windows_install_err_01.PNG)
+   Solution: You get this error because, in Step 4, we setup the system environment variables ```PYSPARK_DRIVER_PYTHON``` and ```PYSPARK_DRIVER_PYTHON_OPTS``` to run pyspark on a Jupyter notebook. To avoid this problem, you can either use PyCharm or temporarily disable these two environment variables
+   
