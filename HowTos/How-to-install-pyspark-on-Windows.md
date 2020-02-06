@@ -42,7 +42,7 @@ https://www.anaconda.com/distribution/#download-section
 
 During the installation, please remember to set the following Advanced Installation Options to true:
  * Add Anaconda to my PATH environment variable<br/>
- * Register Anaconda as my default Python<br/>
+ * **Register Anaconda as my default Python** (This is important)<br/>
 Anaconda will also ask if you want to install VS Code. This is an excellent IDE, so I recommend that you install it, but it is totally optional. 
 
 A rather detailed installation guide for Anaconda is available here, just in case you need some additional help:
@@ -157,7 +157,9 @@ So, our installation is good, now let's create PySpark script in python and see 
      C:\ProgramData\spark\spark-2.4.4-bin-hadoop2.7\conf
      ```
    * If you do not have a file ```log4j.properties``` here, then copy the file ```log4j.properties.template``` and rename it to ```log4j.properties```
-   * Open the ```log4j.properties``` and change the following two lines from:
+   
+   **NOTE**
+   * Just in case that you do not want to see many info log outputs, you can open (This is very **optional step**) the ```log4j.properties``` and change the following two lines from:
         ```
         # Set everything to be logged to the console
         log4j.rootCategory=INFO, console
