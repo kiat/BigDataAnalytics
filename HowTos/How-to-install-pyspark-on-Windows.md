@@ -158,7 +158,7 @@ So, our installation is good, now let's create PySpark script in python and see 
      ```
    * If you do not have a file ```log4j.properties``` here, then copy the file ```log4j.properties.template``` and rename it to ```log4j.properties```
    
-   **NOTE**
+**NOTE:**
    * Just in case that you do not want to see many info log outputs, you can open (This is very **optional step**) the ```log4j.properties``` and change the following two lines from:
         ```
         # Set everything to be logged to the console
@@ -171,6 +171,8 @@ So, our installation is good, now let's create PySpark script in python and see 
         ```
    * Save the ```log4j.properties``` and re-run ```TestPySpark.py``` Now you should see only relevant output:
    ![windows_install_08](https://github.com/kiat/MET-CS777/blob/master/HowTos/sceenshots/windows_install_08.PNG)
+
+
 
 ## Step 4: Configure Jupyter Notebook for PySpark
 
@@ -188,6 +190,10 @@ In the **Out[3]** click the link **Spark UI**. This will launch the SparkUI. You
 
 Finally, run the cell with sc.stop() to close the spark session
 ![windows_install_06](https://github.com/kiat/MET-CS777/blob/master/HowTos/sceenshots/windows_install_06.PNG)
+
+
+**NOTE:** If you enabled pyspark with Jupyter Notebook, you will not be able to use **spark-submit**. If you need to use **spark-submit** again, then you need to comment out the two enviroment variables (PYSPARK_DRIVER_PYTHON and  PYSPARK_DRIVER_PYTHON_OPTS )so that you can use spark-submit 
+
 
 ## Step 5: Install & Configure PyCharm(Community Edition)
 
