@@ -16,7 +16,7 @@ and setup
 JAVA_HOME variable to the main folder where you have installed your java 
 
 ```
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8 `
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8
 ```
 
 
