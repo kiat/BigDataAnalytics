@@ -15,7 +15,9 @@ and setup
 
 JAVA_HOME variable to the main folder where you have installed your java 
 
-```export JAVA_HOME=`/usr/libexec/java_home -v 1.8` ``
+```
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8
+```
 
 
 **NOTE:** Spark will not work on Java 11 or 12. Download JDK 1.8 from Oracle or get OpenJDK
