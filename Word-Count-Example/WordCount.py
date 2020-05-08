@@ -12,7 +12,7 @@ if __name__ == "__main__":
         exit(-1)
         
     sc = SparkContext()
-    lines = sc.textFile(sys.argv[1], 1)
+    lines = sc.textFile(sys.argv[1])
     
     counts = lines.flatMap(lambda x: x.split(' ')).map(lambda x: (x, 1)).reduceByKey(add)
     
