@@ -8,12 +8,12 @@ import numpy as np
 # Coin flips by two people, each 10 times, the first number is the number heads and scond is the number of tails
 ys = np.array([(9,1), (8,2), (5,5), (4,6), (7,3)])
 
-thetas = np.array([[0.6, 0.4], [0.5, 0.5]])  # initialize theta_1, 2
+thetas = np.array([[0.7, 0.3], [0.5, 0.5]])  # initialize theta_1, 2
 # Thetas can be the probabilities for the first and second persons for example. 
 
 pis =np.array([0.5, 0.5])  # prob of choosing coin 1 or coin2 is the same.
 
-tolerance = 0.01
+tolerance = 0.0001
 max_iter = 100
 
 loglike_old = 0
