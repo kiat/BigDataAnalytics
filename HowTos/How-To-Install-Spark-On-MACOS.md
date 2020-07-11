@@ -32,20 +32,20 @@ http://spark.apache.org/downloads.html
 
 Direct link is for example following 
 
-http://apache.osuosl.org/spark/spark-2.4.4/spark-2.4.4-bin-hadoop2.7.tgz
+http://mirror.metrocast.net/apache/spark/spark-3.0.0/spark-3.0.0-bin-hadoop2.7.tgz
 
 You can run the following command to download: 
 
-```wget http://apache.osuosl.org/spark/spark-2.4.4/spark-2.4.4-bin-hadoop2.7.tgz```
+```wget http://mirror.metrocast.net/apache/spark/spark-3.0.0/spark-3.0.0-bin-hadoop2.7.tgz```
 
 
 Uncompress it 
 
-```tar xvfz spark-2.4.4-bin-hadoop2.7.tgz```
+```tar xvfz spark-3.0.0-bin-hadoop2.7.tgz```
 
 I have my spark on the following folder 
 
-```/Users/kiat/spark-2.3.0-bin-hadoop2.7```
+```/Users/kiat/spark-3.0.0-bin-hadoop2.7```
 
 # Step-3 -  Setup Enviroment Variables. 
 
@@ -53,9 +53,15 @@ Edit the bash_profile file and set some Environment variables
 
 ```nano .bash_profile```
 
+**Note:** For maxOS Catalina user, you need to edit the zshrc file and set the below enviroment variables to the end of your file 
 
+Also, if your zsh shell could not find the jupyter notebook command, here is the link to solve this problem
 
-```export SPARK_HOME=/Users/kiat/spark-2.3.0-bin-hadoop2.7```
+https://medium.com/@sumitmenon/how-to-get-anaconda-to-work-with-oh-my-zsh-on-mac-os-x-7c1c7247d896
+
+```nano .zshrc```
+
+```export SPARK_HOME=/Users/kiat/spark-3.0.0-bin-hadoop2.7```
 
 ```export PYTHONPATH=$SPARK_HOME/python:$PYTHONPATH```
 
@@ -71,8 +77,8 @@ Add Spark bin and sbin folder to the PATH
 
 To activate the current variables you can restart your mac or type 
 
-```source .bash_profile```
-
+```source .bash_profile``` or
+```source .zshrc```
 
 If you want to use the jupyter notebook on your mac set the following two variables as well. 
 
@@ -85,7 +91,8 @@ You can comment or uncomment the following variables to use one of them
 
 
 to activate 
-```source .bash_profile```
+```source .bash_profile```or
+```source .zshrc```
 
 # Step-4 - Run Spark 
 
