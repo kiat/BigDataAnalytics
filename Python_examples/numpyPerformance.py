@@ -10,8 +10,8 @@ from datetime import datetime
 if __name__ == "__main__":
 
 
-	x = np.ones(20000000)*2
-	y = np.ones(20000000)*2
+	x = np.ones(200000000)*2
+	y = np.ones(200000000)*2
 
 
 
