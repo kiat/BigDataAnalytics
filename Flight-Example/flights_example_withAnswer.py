@@ -61,8 +61,8 @@ weekEndFlights.map(lambda p: (p[4], list(p[11]))).top(1)
 # index 7 is ORIGIN_AIRPORT
 from operator import add
 
-airportWithHighestCancellation= mainFlightsData.map(lambda p: (p[7],  1 ) if p[12] == "1" else (p[7],  0 )).reduceByKey(add).map(lambda (a, b): (b, a)).top(1)
-
+airportWithHighestCancellation= mainFlightsData.map(lambda p: (p[7],  1 ) if p[12] == "1" else (p[7],  0 )).reduceByKey(add).top(1, lambda x:x[1])
+print(airportWithHighestCancellation)
 #Q6 Find the percent of flights cancelled for each carrier.
 # Index 12 is the cancellation flag, 1 means cancelled 
 # Index 4 is the carrier 
