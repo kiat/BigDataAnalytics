@@ -22,7 +22,7 @@ You will learn:
 
 # AWS Console
 
-![AWS Educate First Page](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-1.png "AWS Educate First Page")
+![AWS Educate First Page](https://raw.githubusercontent.com/kiat/BigDataAnalytics/master/Installations-HowTos/sceenshots/AWS-fig-1.png "AWS Educate First Page")
 
 Click on the AWS console and open it. 
 
@@ -30,7 +30,7 @@ This is the main AWS console page.
 
 
 
-![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-2.png "AWS")
+![AWS](https://raw.githubusercontent.com/kiat/BigDataAnalytics/master/Installations-HowTos/sceenshots/AWS-fig-2.png "AWS")
 
 
 ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)
@@ -42,7 +42,7 @@ If you are not in **N. Virginia**, use the drop down menu and change it to **N. 
 ## Start Up a EMR Cluster
 
 
-![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-2.png "AWS")
+![AWS](https://raw.githubusercontent.com/kiat/BigDataAnalytics/master/Installations-HowTos/sceenshots/AWS-fig-2.png "AWS")
 
 
 # AWS EC2 
@@ -51,7 +51,7 @@ Amaozn AWS EC2 (Elastic Computing)
 
 The first step is to go to EC2 and create a key pair. 
 
-![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-3.png "AWS")
+![AWS](https://raw.githubusercontent.com/kiat/BigDataAnalytics/master/Installations-HowTos/sceenshots/AWS-fig-3.png "AWS")
 
 You can skip the following step if you have already generated a key pair. 
 
@@ -70,7 +70,7 @@ You will subsequently use this .pem file to connect securely to a machine over t
 
 
 
-![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-4.png "AWS")
+![AWS](https://raw.githubusercontent.com/kiat/BigDataAnalytics/master/Installations-HowTos/sceenshots/AWS-fig-4.png "AWS")
 
 Download and store the key file **.pem** file. 
 
@@ -78,7 +78,7 @@ It would make your commands simple if you store this key file in your HOME folde
 HOME folder is the main user folder, for example on my Mac it is /Users/kiat/ (note that my account name on my Mac is kiat)
 
 
-![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-5.png "AWS")
+![AWS](https://raw.githubusercontent.com/kiat/BigDataAnalytics/master/Installations-HowTos/sceenshots/AWS-fig-5.png "AWS")
 
 ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)
 <span style="color:red">**IMPORTANT NOTE:**</span>
@@ -93,9 +93,9 @@ You can click on the AWS log on top left to go back to main AWS console page.
 Now go back to AWS EMR. 
 
 
-![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-6.png "AWS")
+![AWS](https://raw.githubusercontent.com/kiat/BigDataAnalytics/master/Installations-HowTos/sceenshots/AWS-fig-6.png "AWS")
 
-![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-7.png "AWS")
+![AWS](https://raw.githubusercontent.com/kiat/BigDataAnalytics/master/Installations-HowTos/sceenshots/AWS-fig-7.png "AWS")
 
 1. Select Spark here to have Apache Spark installed on your cluster machines. 
 2. Select your keypair from the EC2 key pair 
@@ -135,22 +135,22 @@ a complete hour of computation. Also when you run a cluster for 65 min, you will
 
 
 
-![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-8.png "AWS")
+![AWS](https://raw.githubusercontent.com/kiat/BigDataAnalytics/master/Installations-HowTos/sceenshots/AWS-fig-8.png "AWS")
 
 
 It can take up to some minutes until your cluster of machines are provisioned, running and ready for use. 
 
 The provisioning time depends on number of machines, type of machines and how busy is AWS in that time/date. 
 
-![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-9.png "AWS")
+![AWS](https://raw.githubusercontent.com/kiat/BigDataAnalytics/master/Installations-HowTos/sceenshots/AWS-fig-9.png "AWS")
 
 If you see that your machined have received their IP addresses, your cluster is ready for use. 
 
-![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-10.png "AWS")
+![AWS](https://raw.githubusercontent.com/kiat/BigDataAnalytics/master/Installations-HowTos/sceenshots/AWS-fig-10.png "AWS")
 
 Click on **Steps** tab and if you see the instakktion task as complete then your cluster is ready to use. 
 
-![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-11.png "AWS")
+![AWS](https://raw.githubusercontent.com/kiat/BigDataAnalytics/master/Installations-HowTos/sceenshots/AWS-fig-11.png "AWS")
 
 AWS EMR consider all of the installation and computations as processing steps. They developed some scripts to install spark on EC2 machines. EMR is a a very easy to use way to start machines, install spark and hadoop and run computations on it. 
 
@@ -162,11 +162,11 @@ The steps to run Spark Jobs on EMR is documented well here
 
 [https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-spark-submit-step.html](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-spark-submit-step.html)
 
-![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-12.png "AWS")
+![AWS](https://raw.githubusercontent.com/kiat/BigDataAnalytics/master/Installations-HowTos/sceenshots/AWS-fig-12.png "AWS")
 
 Change the menu to **Spark Application** because we will run our pyspark script. 
 
-![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-13.png "AWS")
+![AWS](https://raw.githubusercontent.com/kiat/BigDataAnalytics/master/Installations-HowTos/sceenshots/AWS-fig-13.png "AWS")
 
 
 You will to have your python script stored in a S3 bucket and accessable publicly. 
@@ -179,24 +179,24 @@ We need to go to S3 and store our Python Script there.
 
 Go to the main AWS Console and go to AWS S3 
 
-![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-14.png "AWS")
+![AWS](https://raw.githubusercontent.com/kiat/BigDataAnalytics/master/Installations-HowTos/sceenshots/AWS-fig-14.png "AWS")
 
 First create a bucket in S3. 
 
 **A S3 Bucket** is like a folder on your laptop. However, S3 buckets are unique names because all of the files in the folder will be accessable via S3 intervaces. It should be 
 
-![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-15.png "AWS")
+![AWS](https://raw.githubusercontent.com/kiat/BigDataAnalytics/master/Installations-HowTos/sceenshots/AWS-fig-15.png "AWS")
 
-![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-16.png "AWS")
+![AWS](https://raw.githubusercontent.com/kiat/BigDataAnalytics/master/Installations-HowTos/sceenshots/AWS-fig-16.png "AWS")
 
 We create bucket and allow public access to the folder. We just want to store here tiny script files and allow AWS EMR to access these files. 
 
-![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-18.png "AWS")
+![AWS](https://raw.githubusercontent.com/kiat/BigDataAnalytics/master/Installations-HowTos/sceenshots/AWS-fig-18.png "AWS")
 
 I created here a bucket with my name. You need to search for a unique bucket name and create it. 
 
 
-![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-19.png "AWS")
+![AWS](https://raw.githubusercontent.com/kiat/BigDataAnalytics/master/Installations-HowTos/sceenshots/AWS-fig-19.png "AWS")
 
 
 # Go back to EMR to set up a data processing step 
@@ -217,7 +217,7 @@ So we need to have 3 different address.
 This folder will be created when your result output is generated. 
 You will get an error if the output folder exist on S3. If you have created it before you can remove it before or change the folder name. 
 
-![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-20.png "AWS")
+![AWS](https://raw.githubusercontent.com/kiat/BigDataAnalytics/master/Installations-HowTos/sceenshots/AWS-fig-20.png "AWS")
 
 
 My python script location is : 
@@ -233,13 +233,13 @@ Input file locations are given to you on your assignments.
 
 ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) Your script should read the input and output files from the command line arguments. 
 
-![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-21.png "AWS")
+![AWS](https://raw.githubusercontent.com/kiat/BigDataAnalytics/master/Installations-HowTos/sceenshots/AWS-fig-21.png "AWS")
 
 If your processing step is failing under 20 seconds, it is probably faild and you have some where in your program or your setup an error. 
 
 You can read the log files and check again. 
 
-![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-22.png "AWS")
+![AWS](https://raw.githubusercontent.com/kiat/BigDataAnalytics/master/Installations-HowTos/sceenshots/AWS-fig-22.png "AWS")
 
 
 # Enabling SSH Connection if you want to see GUIs 
@@ -250,33 +250,33 @@ Read the documentations on EMR
 
 You need to install FoxyProxy plugin for chrome or firefox to setup the proxy connection. 
 
-![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-23.png "AWS")
+![AWS](https://raw.githubusercontent.com/kiat/BigDataAnalytics/master/Installations-HowTos/sceenshots/AWS-fig-23.png "AWS")
 
 
 
 # Running Steps 
 
-![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-24.png "AWS")
+![AWS](https://raw.githubusercontent.com/kiat/BigDataAnalytics/master/Installations-HowTos/sceenshots/AWS-fig-24.png "AWS")
 
-![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-25.png "AWS")
+![AWS](https://raw.githubusercontent.com/kiat/BigDataAnalytics/master/Installations-HowTos/sceenshots/AWS-fig-25.png "AWS")
 
 After your Processing step is completed you can go to output folder on S3 and check the results 
 
 You can also see the log files for informations and potential errors. 
 
-![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-26.png "AWS")
+![AWS](https://raw.githubusercontent.com/kiat/BigDataAnalytics/master/Installations-HowTos/sceenshots/AWS-fig-26.png "AWS")
 
 
 # Computation results output on S3 
-![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-27.png "AWS")
+![AWS](https://raw.githubusercontent.com/kiat/BigDataAnalytics/master/Installations-HowTos/sceenshots/AWS-fig-27.png "AWS")
 
-![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-28.png "AWS")
+![AWS](https://raw.githubusercontent.com/kiat/BigDataAnalytics/master/Installations-HowTos/sceenshots/AWS-fig-28.png "AWS")
 
 
 ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) 
 # Do not forget to terminate the EMR Cluster
 
-![AWS](https://raw.githubusercontent.com/kiat/MET-CS777/master/HowTos/sceenshots/AWS-fig-29.png "AWS")
+![AWS](https://raw.githubusercontent.com/kiat/BigDataAnalytics/master/Installations-HowTos/sceenshots/AWS-fig-29.png "AWS")
 
 ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) 
 Do not forget to terminate your EMR. 
