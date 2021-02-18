@@ -30,8 +30,7 @@ Install optional open source components on the cluster. Learn more
  
 
 
-![Create a Cluster and Enable Access to Web Interfaces ](https://raw.githubusercontent.com/kiat/MET-CS777/master/Installations-HowTos
-/sceenshots/gc-webinterface-2.png)
+![Create a Cluster and Enable Access to Web Interfaces ](https://raw.githubusercontent.com/kiat/BigDataAnalytics/master/Installations-HowTos/sceenshots/gc-webinterface-2.png)
 
 
 The Jupyter Web UI is available on port 8123 on the cluster's first master node. Python and PySpark kernels are available.
@@ -44,8 +43,7 @@ After your cluster is provisioned and running, click on the cluster and go to We
 
 
 
-![Create a Cluster and Enable Access to Web Interfaces ](https://raw.githubusercontent.com/kiat/MET-CS777/master/Installations-HowTos
-/sceenshots/gc-webinterface-3.png)
+![Create a Cluster and Enable Access to Web Interfaces ](https://raw.githubusercontent.com/kiat/BigDataAnalytics/master/Installations-HowTos/sceenshots/gc-webinterface-3.png)
 
 
 
@@ -55,7 +53,6 @@ You can find all of the Web Interfaces here, Jupyter and Spark History
 No further setups is needed. 
 
 
-![Create a Cluster and Enable Access to Web Interfaces ](https://raw.githubusercontent.com/kiat/MET-CS777/master/Installations-HowTos
-/sceenshots/gc-webinterface-4.png)
+![Create a Cluster and Enable Access to Web Interfaces ](https://raw.githubusercontent.com/kiat/BigDataAnalytics/master/Installations-HowTos/sceenshots/gc-webinterface-4.png)
 
 
