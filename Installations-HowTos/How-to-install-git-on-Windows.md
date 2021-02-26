@@ -14,8 +14,18 @@ Step-3:
 Go to windows command prompt and use it.
 For example use git command to clone this project
 
-https://github.com/kiat/MET-CS665.git
+https://github.com/kiat/BigDataAnalytics
 
 You can use the command
 
+```
 git clone https://github.com/kiat/MET-CS777.git
+```
+
+
+or using git with SSH keys 
+
+```
+git@github.com:kiat/BigDataAnalytics.git
+```
+
