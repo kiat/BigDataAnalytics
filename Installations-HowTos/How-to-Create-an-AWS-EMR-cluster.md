@@ -33,7 +33,6 @@ This is the main AWS console page.
 ![AWS](https://raw.githubusercontent.com/kiat/BigDataAnalytics/master/Installations-HowTos/sceenshots/AWS-fig-2.png "AWS")
 
 
-![#f03c15](https://placehold.it/15/f03c15/000000?text=+)
 <span style="color:red">**IMPORTANT NOTE:**</span>
 Check if you are in **N. Virginia** Amazon Data center. This is the top right menu, the second one close to **Support**. 
 If you are not in **N. Virginia**, use the drop down menu and change it to **N. Virginia** and stay there for the whole class. 
@@ -80,12 +79,12 @@ HOME folder is the main user folder, for example on my Mac it is /Users/kiat/ (n
 
 ![AWS](https://raw.githubusercontent.com/kiat/BigDataAnalytics/master/Installations-HowTos/sceenshots/AWS-fig-5.png "AWS")
 
-![#f03c15](https://placehold.it/15/f03c15/000000?text=+)
 <span style="color:red">**IMPORTANT NOTE:**</span>
 Never share your prive key .pem file with anyone (be carefull to not push it to github)
 
 
-![#1589F0](https://placehold.it/15/1589F0/000000?text=+) <span style="color:blue">**NOTE:**</span>
+
+<span style="color:blue">**NOTE:**</span>
 You can click on the AWS log on top left to go back to main AWS console page. 
 
 #  AWS EMR 
@@ -100,7 +99,7 @@ Now go back to AWS EMR.
 1. Select Spark here to have Apache Spark installed on your cluster machines. 
 2. Select your keypair from the EC2 key pair 
 
-![#f03c15](https://placehold.it/15/f03c15/000000?text=+)
+
 <span style="color:red">**IMPORTANT NOTE:**
 It is important that you select your Pair Key. 
 Otherwise you can not login to your master machine using SSH connection. 
@@ -213,7 +212,7 @@ We need to set up 3 things
 
 So we need to have 3 different address. 
 
-![#f03c15](https://placehold.it/15/f03c15/000000?text=+) Output folder on S3 should not exist. 
+Output folder on S3 should not exist. 
 This folder will be created when your result output is generated. 
 You will get an error if the output folder exist on S3. If you have created it before you can remove it before or change the folder name. 
 
@@ -228,10 +227,10 @@ In your prgoram arguments you should add your input and output filders, like my 
 
 Input file locations are given to you on your assignments. 
 
-![#f03c15](https://placehold.it/15/f03c15/000000?text=+) It is important to have at least one space between input and output locations.
+**It is important to have at least one space between input and output locations.**
 
 
-![#f03c15](https://placehold.it/15/f03c15/000000?text=+) Your script should read the input and output files from the command line arguments. 
+**Your script should read the input and output files from the command line arguments.**
 
 ![AWS](https://raw.githubusercontent.com/kiat/BigDataAnalytics/master/Installations-HowTos/sceenshots/AWS-fig-21.png "AWS")
 
@@ -273,13 +272,12 @@ You can also see the log files for informations and potential errors.
 ![AWS](https://raw.githubusercontent.com/kiat/BigDataAnalytics/master/Installations-HowTos/sceenshots/AWS-fig-28.png "AWS")
 
 
-![#f03c15](https://placehold.it/15/f03c15/000000?text=+) 
 # Do not forget to terminate the EMR Cluster
 
 ![AWS](https://raw.githubusercontent.com/kiat/BigDataAnalytics/master/Installations-HowTos/sceenshots/AWS-fig-29.png "AWS")
 
-![#f03c15](https://placehold.it/15/f03c15/000000?text=+) 
-Do not forget to terminate your EMR. 
+
+**Do not forget to terminate your EMR. **
 
 Reember that for the 3 machines in your cluster you are paying about .7 cents per hours. It seems to be cheap but it sums up fast when you forget it for some days. 
 
@@ -297,8 +295,8 @@ Type:
 
 ```chmod 500 MyFirstKeyPair.pem```
 
-Now, you can connect to your master machine (replace “54.172.82.0” with the IP address of
-your own master machine):
+Now, you can connect to your master machine **(replace “54.172.82.0” with the IP address of
+your own master machine):**
 
 ssh -i "MyFirstKeyPair.pem" ubuntu@54.172.82.0
 
