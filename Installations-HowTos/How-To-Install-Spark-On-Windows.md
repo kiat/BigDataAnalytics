@@ -122,7 +122,7 @@ Fire up the **Anaconda Propmpt** and type in the following command<br/>
 pyspark
 ```
 This should fire up the spark server on your computer. The output would look something like this:
-![windows_install_01](https://github.com/kiat/BigDataAnalytics/blob/master/HowTos/sceenshots/windows_install_01.PNG)
+![windows_install_01](https://github.com/kiat/BigDataAnalytics/blob/master/Installations-HowTos/sceenshots/windows_install_01.PNG)
 Enter Ctrl+Z to close the spark session.
 
 So, our installation is good, now let's create PySpark script in python and see how we can execute it on spark.
@@ -150,7 +150,7 @@ So, our installation is good, now let's create PySpark script in python and see 
   spark-submit TestPySpark.py
   ```
   If there are no problems, you should see the following output:
-  ![windows_install_02](https://github.com/kiat/BigDataAnalytics/blob/master/HowTos/sceenshots/windows_install_02.PNG)
+  ![windows_install_02](https://github.com/kiat/BigDataAnalytics/blob/master/Installations-HowTos/sceenshots/windows_install_02.PNG)
   As you can see, spark generated tons of messages which end up obfuscating the output that we are really interested in. To fix this, let us update the logging properties for spark. Here's how:
    * Navigate to the conf folder in your spark installation directory. For example:
      ```
@@ -170,7 +170,7 @@ So, our installation is good, now let's create PySpark script in python and see 
         log4j.rootCategory=WARN, console
         ```
    * Save the ```log4j.properties``` and re-run ```TestPySpark.py``` Now you should see only relevant output:
-   ![windows_install_08](https://github.com/kiat/BigDataAnalytics/blob/master/HowTos/sceenshots/windows_install_08.PNG)
+   ![windows_install_08](https://github.com/kiat/BigDataAnalytics/blob/master/Installations-HowTos/sceenshots/windows_install_08.PNG)
 
 
 
@@ -180,16 +180,16 @@ Setting up jupyter notebook for pyspark is quite simple. Just add the following 
 ```PYSPARK_DRIVER_PYTHON``` set to ```jupyter```<br/>
 ```PYSPARK_DRIVER_PYTHON_OPTS``` set to ```notebook```<br/>
 To check that we can use spark with jupyter notebook, let's create a simple notebook ```TestPySparkJupyterNotebook``` in the folder ```C:\Users\Subrat\Documents\CS777```. Update the following code in this notebook
-![windows_install_03](https://github.com/kiat/BigDataAnalytics/blob/master/HowTos/sceenshots/windows_install_03.PNG)
+![windows_install_03](https://github.com/kiat/BigDataAnalytics/blob/master/Installations-HowTos/sceenshots/windows_install_03.PNG)
 
 Now execute all cells **except** the last one with sc.stop()
-![windows_install_04](https://github.com/kiat/BigDataAnalytics/blob/master/HowTos/sceenshots/windows_install_04.PNG)
+![windows_install_04](https://github.com/kiat/BigDataAnalytics/blob/master/Installations-HowTos/sceenshots/windows_install_04.PNG)
 
 In the **Out[3]** click the link **Spark UI**. This will launch the SparkUI. You will learn how to use the Spark UI later in the course.
-![windows_install_05](https://github.com/kiat/BigDataAnalytics/blob/master/HowTos/sceenshots/windows_install_05.PNG)
+![windows_install_05](https://github.com/kiat/BigDataAnalytics/blob/master/Installations-HowTos/sceenshots/windows_install_05.PNG)
 
 Finally, run the cell with sc.stop() to close the spark session
-![windows_install_06](https://github.com/kiat/BigDataAnalytics/blob/master/HowTos/sceenshots/windows_install_06.PNG)
+![windows_install_06](https://github.com/kiat/BigDataAnalytics/blob/master/Installations-HowTos/sceenshots/windows_install_06.PNG)
 
 
 **NOTE:** If you enabled pyspark with Jupyter Notebook, you will not be able to use **spark-submit**. If you need to use **spark-submit** again, then you need to comment out the two enviroment variables (PYSPARK_DRIVER_PYTHON and  PYSPARK_DRIVER_PYTHON_OPTS )so that you can use spark-submit 
@@ -201,7 +201,7 @@ Before installing PyCharm, please make sure that you have completed steps 1 to 3
 https://www.jetbrains.com/pycharm/download/#section=windows
 
 Once you have installed PyCharm, create a new project and add the python script ```TestPySpark.py``` we created earlier in Step3. Run the script and you should see the following:
-![windows_install_07](https://github.com/kiat/BigDataAnalytics/blob/master/HowTos/sceenshots/windows_install_07.PNG)
+![windows_install_07](https://github.com/kiat/BigDataAnalytics/blob/master/Installations-HowTos/sceenshots/windows_install_07.PNG)
 
 ***
 ## Troubleshooting
@@ -222,6 +222,6 @@ Once you have installed PyCharm, create a new project and add the python script 
    No, this library is not required anymore with pysaprk bindings for Anaconda, we installed in Step3
    
 3. When I run ```spark-submit TestPySpark.py``` why do I get error like this?
-   ![windows_install_err_01](https://github.com/kiat/MET-CS777/blob/master/HowTos/sceenshots/windows_install_err_01.PNG)
+   ![windows_install_err_01](https://github.com/kiat/BigDataAnalytics/blob/master/Installations-HowTos/sceenshots/windows_install_err_01.PNG)
    Solution: You get this error because, in Step 4, we setup the system environment variables ```PYSPARK_DRIVER_PYTHON``` and ```PYSPARK_DRIVER_PYTHON_OPTS``` to run pyspark on a Jupyter notebook. To avoid this problem, you can either use PyCharm or temporarily disable these two environment variables
    
